@@ -1,0 +1,39 @@
+CODE: RD-001
+
+DISEASE: SPINAL MUSCULAR ATROPHY
+
+TITLE: Pathway-Level Characterisation of Peripheral Blood Transcriptomic Dysregulation in Spinal Muscular Atrophy
+
+RESEARCH TYPE: Transcriptomic Pathway Enrichment Analysis
+
+METHODS: Differential Expression (Limma) · GO Over-Representation Analysis · Gene Set Enrichment Analysis (GSEA) · clusterProfiler
+
+ABSTRACT:
+Spinal muscular atrophy (SMA) arises from depletion of survival motor neuron (SMN) protein, yet the biological consequences of this deficiency in accessible peripheral tissue remain incompletely characterised at the pathway level. This investigation applied differential expression analysis, followed by Gene Ontology (GO) over-representation analysis (ORA) and complementary gene-set enrichment analysis (GSEA), to whole-blood RNA-seq data from a publicly available dataset on Gene Expression Omnibus (GEO) to determine which cellular compartments are disproportionately represented among the transcriptional differences separating SMA from healthy blood. Differential expression analysis identified 78 upregulated and 22 downregulated candidate genes. GO Cellular Component was the only ontology to yield statistically significant enrichment, producing 13 significant UP-associated terms and 16 significant DOWN-associated terms, while Biological Process and Molecular Function returned no significant categories in either direction. Downregulated genes were dominated by SMN-associated nuclear structures: the SMN complex, SMN-Sm protein complex and Cajal body, along with a parallel muscle-structural signature, both likely driven by SMN1 and SMN2. Upregulated genes were concentrated within extracellular matrix, blood microparticle and membrane/vesicle-associated compartments. Complementary GSEA confirmed transcriptome-wide, same-direction convergence for 6 of these categories. Together, these findings characterise a coherent, pathway-level transcriptomic signature associated with SMA in peripheral blood, which may form a basis for biomarker or therapeutic studies and future replication.
+
+FINDING 1 TITLE / TEXT:
+SMN Signal Recovery
+Downregulated genes were concentrated across overlapping SMN-associated nuclear structures, with the SMN complex and SMN-Sm complex showing the strongest transcriptome-wide convergence in the study (NES = −2.15 and −2.26) — correctly recovering SMA's core molecular lesion from blood alone.
+
+FINDING 2 TITLE / TEXT:
+Extracellular & Blood-Microparticle Signature
+Upregulated genes were significantly concentrated in extracellular matrix and blood microparticle categories, all confirmed by matching-direction GSEA enrichment — the most statistically robust result of the study, and one consistent with prior reports of elevated extracellular vesicles in SMA blood.
+
+FINDING 3 TITLE / TEXT:
+A Muscle-Structural Echo in Blood
+A hierarchy of muscle-structural terms (Z disc, sarcomere, myofibril) was enriched among downregulated genes, though only the Z disc reached transcriptome-wide significance — a plausible but tissue-indirect signal, since whole blood does not directly sample muscle.
+
+FIGURES
+
+Figure 1. Differential expression of genes in the G17 SMA cohort. Volcano plot of SMA-versus-healthy differential expression following Limma analysis; 78 genes met the UP criterion, and 22 met the DOWN criterion (|log2FC| ≥ 1, P < 0.05).
+Figure 2. GO Cellular Component enrichment among UP-associated genes: 13 categories reached adjusted P < 0.05
+Figure 3. GO Cellular Component enrichment among DOWN-associated genes: 16 categories reached adjusted P < 0.05.
+Figure 4. Convergence between GO-ORA and transcriptome-wide GO-GSEA. 6 Cellular Component categories were significant, direction-concordant and shared between both analyses.
+Figure 5. Integrated summary of major transcriptomic signatures identified in G17
+
+
+WHAT WE KNOW: SMA is caused by depletion of SMN protein, and its impact on motor neurons is well established.
+
+WHAT REMAINS UNCERTAIN: Whether the systemic consequences of SMN deficiency organise into coordinated, biologically interpretable pathways in accessible peripheral tissue such as blood, rather than isolated gene-level differences.
+
+HOW THIS PROJECT ADDRESSES IT: Differential expression analysis of peripheral blood RNA-seq was paired with GO over-representation analysis and transcriptome-wide GSEA to move from individual genes to pathway-level interpretation, using convergence across both statistical approaches to identify which biological themes are most defensibly associated with SMA.
